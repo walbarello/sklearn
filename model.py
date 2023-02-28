@@ -1,6 +1,8 @@
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
+import random
+import matplotlib.pyplot as plt
 
 def train_model(sananga_name, melonidas_name, cidoso_name, n_train):
     sananga_count = 0
@@ -42,8 +44,7 @@ def train_model(sananga_name, melonidas_name, cidoso_name, n_train):
         (cidoso_name, cidoso_count, model.score(np.array([[0, 0, 1]]), [cidoso_name]))
     ]
 
-import random
-import matplotlib.pyplot as plt
+# gráficos abaixo.
 
 SANANGA = 1
 MELONIDAS = 2
